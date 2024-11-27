@@ -1,0 +1,323 @@
+for i in range(1,5):
+    for j in range(i*2):
+         print(" ",end='')
+    for k in range(1,5):
+         print("* ",end='')
+    print()
+
+Output -:
+* * * * 
+    * * * *
+      * * * *
+        * * * *
+
+--------------------------------------------------------------------------------------------------
+n=int(input("Enter the number: "))
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if(i==1 or i==n or j==1 or j==n):
+           print("*",end='')
+        else:
+           print(" ",end='')
+    print("")
+
+Output -:
+*****
+*       *
+*       *
+*       *
+*****
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+    for j in range(i):
+        print(chr(j + 65), end="")
+    print()
+
+Output -:
+A
+AB
+ABC
+ABCD
+ABCDE
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+    for j in range(i):
+        print(chr(i + 64), end="")
+    print()
+
+Output -:
+A
+BB
+CCC
+DDDD
+EEEEE
+--------------------------------------------------------------------------------------------------
+rows = 5
+for i in range(rows):
+    ch = chr(65 + rows - i - 1)
+    for j in range(i + 1):
+        print(ch, end="  ")
+        ch = chr(ord(ch) + 1)
+    print()
+
+Output -:
+E  
+D  E
+C  D  E
+B  C  D  E
+A  B  C  D  E
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+    for j in range(1,6-i):
+        print(" ",end='')
+    for k in range(1,i+1):
+        print("*",end='')
+    print("")
+
+Output -:
+         *
+      **
+    ***
+  ****
+*****
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+    for j in range(1,6-i):
+        print(" ",end='')
+    for k in range(1,i+1):
+        print(k,end='')
+    print("")
+
+Output -:
+        1
+      12
+    123
+  1234
+12345
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+    for j in range(i):
+        print(" ",end='')
+    for j in range(6-i):
+        print(j+1,end='')
+    print("")
+
+Output -:
+12345
+  1234
+    123
+     12
+       1
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+    for j in range(i):
+        print(" ",end='')
+    for k in range(1,7-i):
+        print(chr(k+64),end='')  
+    print("")
+
+Output -:
+ ABCDE
+   ABCD
+     ABC
+       AB
+         A
+--------------------------------------------------------------------------------------------------
+rows=5
+for i in range(rows):
+    print(" " * (rows-i-1)*2,end='')      
+    print("* " * rows)
+
+Output -:
+       * * * * * 
+      * * * * *
+    * * * * *
+  * * * * *
+* * * * *
+--------------------------------------------------------------------------------------------------
+for i in range(1,5):
+    print(" " *(5-i-1)*2,end="")
+    for  j in range(1,5+1):
+        print(j,end=" ")
+    print("")
+
+Output -:
+      1 2 3 4 5 
+    1 2 3 4 5
+  1 2 3 4 5
+1 2 3 4 5
+--------------------------------------------------------------------------------------------------
+for i in range(1,5):
+  print(" " *(5-i-1)*2,end="")
+  for  j in range(1,6):
+    print(chr(64+j),end=" ")
+  print("")
+
+Output -:
+      A B C D E 
+    A B C D E
+  A B C D E
+A B C D E
+--------------------------------------------------------------------------------------------------
+for i in range(1,5):
+    for s in range(1,5-i):
+        print(" ",end='')
+    for j in range(1,i+i):
+        print("*",end='')
+    print("")
+
+Output -:
+      *
+    ***
+  *****
+*******
+--------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
+
+for i in range(1,6):
+  for j in range(1,i+1):
+    print("*",end='')
+  print()
+for k in range(1,6):
+    for i in range(6,k,-1):
+      print("*",end='')
+    print()
+
+Output -:
+*
+**
+***
+****
+*****
+*****
+****
+***
+**
+*
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+    for space in range(1,6-i):
+        print(" ",end='')
+    for j in range(1,i+1):
+        print("*",end='')
+    print()
+for m in range(5,0,-1):
+    for k in range(1,6-m):
+        print(" ",end='')
+    for n in range(1,m+1):
+        print("*",end='')
+    print()
+
+Output -:
+         *
+       **
+     ***
+   ****
+ *****
+ *****
+   ****
+     ***
+       **
+         *
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+  for j in range(1,5+1):
+    if(i==1 or i==5 or j==5 or j==1 or j==5):
+      print("*",end=' ')
+    else:
+      print("  ",end='')
+  print("")
+
+Output -:
+* * * * * 
+*           * 
+*           * 
+*           * 
+* * * * * 
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+  for j in range(1,5+1):
+    if(i==1 or i==5 or j==5 or j==1 or j==5):
+      print(j,end=' ')
+    else:
+      print("  ",end='')
+  print("")
+
+Output -:
+1 2 3 4 5 
+1           5 
+1           5 
+1           5 
+1 2 3 4 5 
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+  for j in range(1,5+1):
+    if(i==1 or i==5 or j==5 or j==1 or j==5):
+      print(chr(64+j),end=' ')
+    else:
+      print("  ",end='')
+  print("")
+
+Output -:
+A B C D E 
+A           E 
+A           E 
+A           E 
+A B C D E 
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+  for j in range(1,i+1):
+    if(i==5 or j==5 or i==1 or j==1 or i==j):
+      print(j,end=' ')
+    else:
+      print("  ",end='')
+  print("")
+
+Output -:
+1 
+1   2 
+1      3 
+1        4 
+1 2 3 4 5
+--------------------------------------------------------------------------------------------------
+for i in range(1,6):
+  for s in range(6,i+1,-1):
+    print(" ",end=' ') 
+  for k in range(1,i+1):
+   if(i==3 and k==2):
+    print("   ",end=' ')
+   elif(i==4 and k==2 or i==4 and k==3):
+    print("   ",end=' ')
+   else:
+    print(k,end='   ')
+  print(" ") 
+
+Output -:
+         1    
+      1   2    
+    1         3    
+  1              4    
+1   2   3   4   5
+--------------------------------------------------------------------------------------------------
+blank=0
+for i in range(1,6):
+  for s in range(6,i+1,-1):
+    print(" ",end=' ')
+  for j in range(1,i+1):
+    blank=blank+1
+    print(blank,end=' ')
+  if(i>=2):
+    for k in range(1,i):
+      blank=blank-1
+      print(blank,end=' ')
+  print("")
+
+Output -:
+         1 
+      2 3 2 
+    3 4 5 4 3 
+  4 5 6 7 6 5 4 
+5 6 7 8 9 8 7 6 5 
+
+
