@@ -46,4 +46,8 @@ for i in data :
     mydictionary[i]=mydictionary[i]+1
 print(mydictionary)
 
+#eight program...
+
+
+
 
