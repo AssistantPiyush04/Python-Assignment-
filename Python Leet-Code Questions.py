@@ -159,7 +159,7 @@ for i in range(len(nums)):
             j += 1
 
 
-#Three sum close code leetcode..
+#Three sum close...
 nums=[-1,2,1,-4]
 nums.sort()
 target=1
